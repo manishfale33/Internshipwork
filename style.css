@@ -1,0 +1,78 @@
+
+*{
+    /* i use this all element selector for select each and every tag present in html */
+    background-color: black;
+    margin: 0;
+    
+}
+
+.warning {
+    /* this is example for class selector */
+    color: brown;
+}
+/* this is attribute selector example */
+[required] {
+    border: 2px solid red;
+}
+
+/* Select all input elements with the type "text" */
+input[type="text"] {
+    color: red;
+    font-size: 16px;
+}
+
+/* Select all elements with the "title" attribute containing the word "flower" */
+[title~="flower"] {
+    border: 1px solid rgb(61, 71, 255);
+}
+
+/* Select all elements with the "href" attribute starting with "https" */
+[href|="https"] {
+    color: blue;
+}
+
+h1{
+    color: aliceblue;
+}
+
+/* Selects the active link */
+a:active {
+    color: purple;
+}
+
+/* Selects the element that the mouse is hovering over */
+a:hover {
+    color: green;
+}
+
+/* Selects the first child element of its parent */
+ul li:first-child {
+    color: red;
+}
+
+/* Selects the nth child element of its parent */
+ul li:nth-child(2) {
+    color: blue;
+}
+
+/* Selects the nth child element of its parent, counting from the last child */
+ul li:nth-last-child(2) {
+    color: rgb(191, 255, 0);
+}
+
+div p {
+    font-size: 18px;
+    color: rgb(144, 201, 255);
+}
+
+/* Selects all <li> elements that are direct children of a <ul> element */
+ul > li {
+    list-style: none;
+    background-color: rgb(51, 255, 204);
+}
+
+/* Selects the <p> element that is directly adjacent to an <h1> element */
+h1 + p {
+    font-size: 24px;
+    font-weight: bold;
+}
